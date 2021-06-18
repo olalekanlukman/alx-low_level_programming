@@ -13,7 +13,7 @@ int main(void)
 	while (n <= 57)
 	{
 		putchar(n);
-		i++;
+		n++;
 	}
 	while (ch <= 'f')
 	{

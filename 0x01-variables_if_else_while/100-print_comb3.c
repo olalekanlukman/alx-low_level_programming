@@ -22,8 +22,9 @@ int main(void)
 			{
 				putchar(',');
 				putchar(' ');
-			b++;
 			}
+			b++;
+			
 		}
 	b = (b / b) + j;
 	a++;

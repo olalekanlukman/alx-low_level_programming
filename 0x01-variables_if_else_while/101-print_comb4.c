@@ -43,4 +43,6 @@ int main(void)
 		k++;
 		i++;
 	}
-}
+	putchar('\n');
+	return (0);
+	}

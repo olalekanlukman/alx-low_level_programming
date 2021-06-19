@@ -24,7 +24,6 @@ int main(void)
 				putchar(' ');
 			}
 			b++;
-			
 		}
 	b = (b / b) + j;
 	a++;

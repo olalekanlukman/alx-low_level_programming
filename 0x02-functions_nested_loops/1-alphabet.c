@@ -3,7 +3,6 @@
  * print_alphabet - this prints alphabets from a different function
  */
 
-void print_alphabet(void);
 
 void print_alphabet(void)
 {
@@ -11,8 +10,8 @@ void print_alphabet(void)
 
 	while (alpha <= 'z')
 	{
-		putchar(alpha);
+		_putchar(alpha);
 		alpha++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }

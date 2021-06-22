@@ -8,14 +8,17 @@
 
 int main(void)
 {
-	char str[] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n', '\0'};
-	int i = 0;
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
 
-	while (str[i] != '\0')
-	{
-		_putchar(i);
-		i++;
-	}
+}
 	_putchar('\n');
 	return (0);
 }

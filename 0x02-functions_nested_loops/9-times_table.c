@@ -37,13 +37,13 @@ void times_table(void)
 		}
 		else if (b == 9 && p > 10)
 		{
-		putchar((p / 10) + '0');
-		putchar((p % 10) + '0');
-		putchar('\n');
+			_putchar((p / 10) + '0');
+			_putchar((p % 10) + '0');
+			_putchar('\n');
 		}
 		b++;
-		}
-		a++;
-		b = 0;
+	}
+	a++;
+	b = 0;
 	}
 }

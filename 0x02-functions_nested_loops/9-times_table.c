@@ -24,8 +24,7 @@ void times_table(void)
 		}
 		else if (p > 9 && b != 9)
 		{
-		_putchar((p / 10) + '0');
-		_putchar((p % 10) + '0');
+		printf("%d", p);
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
@@ -37,9 +36,7 @@ void times_table(void)
 		}
 		else if (b == 9 && p > 10)
 		{
-		_putchar((p / 10) + '0');
-		_putchar((p % 10) + '0');
-		_putchar('\n');
+		printf("%d\n", p);
 		}
 		b++;
 		}

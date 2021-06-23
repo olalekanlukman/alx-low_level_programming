@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -24,9 +25,9 @@ void times_table(void)
 		}
 		else if (p > 9 && b != 9)
 		{
-		printf("%d", p);
+		_putchar((p / 10) + '0');
+		_putchar((p % 10) + '0');
 		_putchar(',');
-		_putchar(' ');
 		_putchar(' ');
 		}
 		else if (b == 9 && p < 10)
@@ -36,7 +37,9 @@ void times_table(void)
 		}
 		else if (b == 9 && p > 10)
 		{
-		printf("%d\n", p);
+		putchar((p / 10) + '0');
+		putchar((p % 10) + '0');
+		putchar('\n');
 		}
 		b++;
 		}

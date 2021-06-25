@@ -22,7 +22,6 @@ void print_diagonal(int n)
 			for (q = 0; q < a; q++)
 			{
 				_putchar(' ');
-				_putchar(' ');
 			}
 				_putchar('\\');
 		}

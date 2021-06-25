@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -7,6 +8,6 @@
 
 int _putchar(int c)
 {
-	return (putchar(c));
+   return(putchar(c));
 	
 }

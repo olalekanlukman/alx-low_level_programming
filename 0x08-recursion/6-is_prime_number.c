@@ -1,32 +1,31 @@
 #include "holberton.h"
 
-int detect(int n, int i);
-
 /**
- * is_prime_number - detects aprime number
- * @n: the number
- * Return: 0 or 1
- */
+ * check2 - checks to see if number is prime
+ * @a:int
+ * @b:int
+ * Return:int
+*/
 
-int is_prime_number(int n)
+int check2(int a, int b)
 {
-	return (detect(n, 2));
+if (b < 2 || b % a == 0)
+return (0);
+else if (a > b / 2)
+return (1);
+else
+return (check2(a + 1, b));
 }
 
 /**
- * detect - uses recursion to detect a prime number
- * @n: the num
- * @i: the variable
- * Return: 0 or 1
- */
+ * is_prime_number - states if number is prime
+ * @n:int
+ * Return:int
+*/
 
-int detect(int n, int i)
+int is_prime_number(int n)
 {
-	if (n <= 2)
-		return ((n == 2) ? 1 : 0);
-	if (n % i == 0)
-		return (0);
-	if (i < sqrt(n))
-		return (detect(n, i + 1));
-	return (1);
+if (n == 2)
+return (1);
+return (check2(2, n));
 }

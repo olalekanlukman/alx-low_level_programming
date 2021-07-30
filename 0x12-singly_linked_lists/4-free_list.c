@@ -11,20 +11,12 @@
 void free_list(list_t *head)
 {
 	list_t *temp;
-	unsigned int count = 0;
 
 	while (head)
 	{
-		count++;
-		head = head->next;
-	}
-
-	while (count)
-	{
-		temp = head;
-		while (temp->next)
-			temp = temp->next;
-		free(temp);
-		count--;
+		temp = head->next;
+		free(head->str);
+		free(head);
+		head = temp;
 	}
 }
